@@ -13,10 +13,10 @@ export const ProductContainer = styled.View`
   flex-direction: row;
 `;
 
-export const ProductList = styled(FlatList)`
+export const ProductList = (styled(FlatList)`
   flex: 1;
   padding: 0 10px;
-`;
+` as React.ComponentType) as new <T>() => FlatList<T>;
 
 export const Product = styled.View`
   background: #fff;
